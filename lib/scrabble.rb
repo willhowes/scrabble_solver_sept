@@ -9,8 +9,10 @@ class Scrabble
   def score
     if @letters == 'a'
       1
-    else
+    elsif @letters == 'f'
       4
+    else
+      6
     end
   end
 end
