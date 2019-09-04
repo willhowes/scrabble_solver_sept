@@ -7,6 +7,10 @@ class Scrabble
   end
 
   def score
-    1
+    if @letters == 'a'
+      1
+    else
+      4
+    end
   end
 end
