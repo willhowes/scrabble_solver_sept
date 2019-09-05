@@ -17,5 +17,10 @@ describe 'Scrabble' do
       expect(scrabble.score).to eq(6)
     end
 
+    it 'returns 22 for "quirky"' do
+      scrabble = Scrabble.new('quirky')
+      expect(scrabble.score).to eq(22)
+    end
+
   end
 end
