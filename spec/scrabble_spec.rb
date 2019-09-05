@@ -32,7 +32,7 @@ describe 'Scrabble' do
       expect(scrabble.score).to eq(0)
     end
 
-    it 'returns nil for non-aplhabet characters' do
+    it 'returns 0 for non-aplhabet characters' do
       scrabble = Scrabble.new(" \t\n")
       expect(scrabble.score).to eq(0)
     end
