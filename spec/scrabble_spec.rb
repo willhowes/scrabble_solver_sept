@@ -36,5 +36,10 @@ describe 'Scrabble' do
       scrabble = Scrabble.new(" \t\n")
       expect(scrabble.score).to eq(0)
     end
+
+    it 'returns 0 for an input of nil' do
+      scrabble = Scrabble.new(nil)
+      expect(scrabble.score).to eq(0)
+    end
   end
 end
