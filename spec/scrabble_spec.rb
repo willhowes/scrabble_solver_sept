@@ -26,5 +26,10 @@ describe 'Scrabble' do
       scrabble = Scrabble.new('OXYPHENBUTAZONE')
       expect(scrabble.score).to eq(41)
     end
+
+    it 'retuns 0 for a blank string as input' do
+      scrabble = Scrabble.new('')
+      expect(scrabble.score).to eq(0)
+    end
   end
 end
